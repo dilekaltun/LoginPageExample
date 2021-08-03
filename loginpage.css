@@ -1,0 +1,66 @@
+
+body{
+    background: url(space2.jpg);    /* <a href="https://ibb.co/K2xgCcP"><img src="https://i.ibb.co/9bH0RmD/space2.jpg" alt="space2" border="0"></a>  */
+
+    background-size: cover;
+    
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, .7);
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .7);
+    border-radius: 15px;
+}
+h2{
+    margin-bottom: 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.wrapper .inputBox{
+    position: relative;
+
+}
+.wrapper .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    outline: none; 
+    background: transparent;
+    border-bottom: 1px solid #fff;
+
+}
+.wrapper .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.wrapper .inputBox input:focus ~ label,
+.wrapper .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: rgb(0, 140, 255);
+    font-size: 15px;
+}
+input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(0, 140, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(80%, 0%); /*butonu ortaladık.*/
+}
